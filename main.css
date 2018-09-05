@@ -71,7 +71,9 @@ body {
   background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: -olinear-gradient(to top, #283E51, #0A2342); 
-  height: 140%;
+  background-attachment: fixed;
+    bac
+
 }
 
 .stars {
@@ -83,7 +85,8 @@ body {
   width:100%;
   height:100%;
   display:block;
-  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+/*  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;*/
+    background-color: red;
   z-index:0;
 }
 .logy{

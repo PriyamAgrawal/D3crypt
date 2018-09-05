@@ -1,3 +1,13 @@
+body {
+    background-image: url("./bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.row1{
+    padding-top: 2%;
+}
 .nav{
     background-color: #111;
     margin-bottom: 0px;
@@ -15,6 +25,9 @@
     background-color: #f1f1f1;
     color : #111;
 }
+.button2{
+    
+}
 .button
 {
     background-color: #111;
@@ -27,21 +40,16 @@
     background-color: #f1f1f1;
     color : #111;
 }
-.nm{
-     border-radius: 20px 20px;
-    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
-    opacity: 0.8;
-    text-align: center;
-    padding: 1% 1% 1%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
 .question-back{
     border-radius: 20px 20px;
-    
+    width: 80%; 
     background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
     opacity: 0.6;
+    padding-bottom: 2%;
     
+}
+.answer{
+    justify-content: center;
 }
 .question{
     text-align: center;
@@ -56,72 +64,18 @@
     
     background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
     opacity: 0.8;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
 
 }
 
 .table2{
     border-radius: 20px 20px;
-    
     background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
     opacity: 0.8;
     width: 30%;
 }
-.sky {
-  position:absolute;
-  width:100%;
-  background: #4B79A1;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -olinear-gradient(to top, #283E51, #0A2342); 
-  height: 140%;
-}
 
-.stars {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:0;
-}
 
-h3 {
-  font-family: 'Rammetto One';
-  text-align: center;
-  font-size: 1.75rem;
-  color: #fff;
-  width: 55%;
-  margin: 5rem auto;
-  line-height: 3rem;
-  letter-spacing: 5px;
-}
-@media(max-width:600px){
-    .sky {
-  position:absolute;
-  width:100%;
-  background: #4B79A1;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -olinear-gradient(to top, #283E51, #0A2342); 
-  height: 170%;
-}
-}
-@media(max-width:1300px){
-    .sky {
-  position:absolute;
-  width:100%;
-  background: #4B79A1;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -olinear-gradient(to top, #283E51, #0A2342); 
-  height: 130%;
-}
-}
 /*****************************************
 Check out Nat's pen with animated SVG weather icons. 
 
