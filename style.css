@@ -44,7 +44,6 @@ canvas{
 /*----------button-----------*/
 .button {
       background-color: transparent;
-       
       border:3px solid white;
       border-radius:  2px;
       color: white;
@@ -54,12 +53,12 @@ canvas{
       display: inline-block;
       font-size: 16px;
       margin: 4px 4px;
-      border-radius: 50px;
       cursor: pointer;
-      font-family: consolas; 
     }
     
-
+.button:active{
+  background-color: white; 
+}
 /*____________________________________*/
 /* --------- background ------------- */
 
@@ -67,7 +66,7 @@ body , #particles-js {
   width: 100wh;
   height: 90vh;
   color: #fff;
-  background: linear-gradient(-45deg, #000000, #3A3B3A, #0D1B5C, #6E001D);
+  background: linear-gradient(-45deg, #000000, #3A3B3A, #0D1B5C, #020933);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
@@ -118,23 +117,19 @@ body , #particles-js {
 
 
 #div1{
-  position: absolute; left: 50%; top: 40%; transform: translate(-50%,-50%); color: white; display: none; font-size: 5em ; font-family: roboto; z-index: 100; padding-bottom: 15px; 
-  font-family: consolas;
-  letter-spacing: 5px;
+  position: absolute; left: 50%; top: 40%; transform: translate(-50%,-50%); color: white; display: none; font-size: 5em ; font-family: roboto; z-index: 1; padding-bottom: 15px; 
 }
 
 #login{
-  position: absolute; left: 35%; top: 60%; transform: translate(-50%,-50%);  font-size: 4vh; display: none; width: 300px;
+  position: absolute; left: 35%; top: 60%; transform: translate(-50%,-50%);  font-size: 3em; display: none; width: 300px;
 }
 
 #register{
-  position: absolute; left: 65%; top: 60%; transform: translate(-50%,-50%); font-size: 4vh; display: none; z-index: 1; width: 300px;
+  position: absolute; left: 65%; top: 60%; transform: translate(-50%,-50%); font-size: 3em; display: none; z-index: 1; width: 300px;
 }
 
 .button1{
-   position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);   font-size: 4vh; display: block;
-   font-family: consolas; 
-   border-radius: 50px;
+   position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);   font-size: 3em; display: block; 
 }
 
 #particles-js{
@@ -214,11 +209,6 @@ body , #particles-js {
 }
 
 }
-
-
-
-
-
 
 
 

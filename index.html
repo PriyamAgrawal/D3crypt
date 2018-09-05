@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>D3CRYPT</title>
+  <title>D Ǝ C R Y P T</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="IEEE - SBM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Welcome to D3CRYPT</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
@@ -18,10 +15,10 @@
 <script>
 $(document).ready(function(){
     $(".button1").click(function(){
-        $(".button1").fadeOut(300);
-        $("#div1").fadeIn(2000);
-        $("#login").fadeIn(2000);
-        $("#register").fadeIn(2000);
+      $(".button1").fadeOut(300);
+      $("#div1").fadeIn(2000);
+      $("#login").fadeIn(2000);
+      $("#register").fadeIn(2000);
     });
 });
 
@@ -36,10 +33,9 @@ $(document).ready(function(){
 
 <!-- particles.js container -->
 <div style="position: relative;" id="particles-js">
-  <button class="button button1" id="btn" onclick="myFunction"> CLICK HERE</button>
+  <button class="button button1"> CLICK HERE</button>
   
-  <div id="div1">DECRYPT</div>
-  <div  style="left: 40%; color: white; font-size: 50px;"></div>
+  <div id="div1"> D Ǝ C R Y P T </div>
 
   <button class="button" id="login">Log In</button>
   
@@ -77,51 +73,5 @@ $(document).ready(function(){
   requestAnimationFrame(update);
 </script>
 
-<script type="text/javascript">
- document.getElementById("div1").addEventListener("click", myFunction);
-function myFunction{
-            var container = $('#div1').get(0);
-            var textToWrite = 'D3CRYPT';
-            var i = 0;
-            var progress = 0;
-            var codingChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-            function animate() 
-            {
-                setTimeout(function()
-                { 
-                    i++;
-                    var currentText = textToWrite.substr(0, i);
-                    currentText += getRandomChars(textToWrite.length - i);
-                    container.innerHTML = currentText;
-                    progress = i/textToWrite.length;
-  
-                    if(progress < 1) 
-                    {
-                        animate();
-                    }
-                }, 100);
-            }
-
-            function getRandomChars(howMany) 
-            {
-                var result = '';
-  
-                for(var i=0; i<howMany; i++) 
-                {
-                    if(i % 5 == 0) 
-                    {
-                        result += ' ';
-                    } 
-                    else 
-                    {
-                        result += codingChars.charAt(Math.floor(Math.random() * codingChars.length));
-                    }
-                }
-                return result;
-            }
-            animate();
-}
-        </script>
 </body>
 </html>
