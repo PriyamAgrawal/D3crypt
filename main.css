@@ -6,25 +6,33 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+#particles-js
+{
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('fonts/poppins/Poppins-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('fonts/poppins/Poppins-Medium.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('fonts/poppins/Poppins-Bold.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('fonts/poppins/Poppins-SemiBold.ttf'); 
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -35,8 +43,7 @@
 	padding: 0px; 
 	box-sizing: border-box;
 }
-
-body, html {
+body {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
 }
@@ -162,8 +169,12 @@ iframe {
 [ login ]*/
 
 .limiter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .container-login100 {
