@@ -2,6 +2,9 @@
     background-color: #111;
     margin-bottom: 0px;
 }
+body {
+  overflow-x: hidden;
+}
 .button1
 {
     background-color: #111;
@@ -28,27 +31,20 @@
     color : #111;
 }
 .nm{
-     border-radius: 20px 20px;
-    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
-    opacity: 0.8;
+    border-radius: 20px 20px;
+    color: #ffe6ff;
     text-align: center;
     padding: 1% 1% 1%;
     margin-bottom: 2%;
     margin-top: 2%;
 }
-.question-back{
-    border-radius: 20px 20px;
-    
-    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
-    opacity: 0.6;
-    
-}
 .question{
     text-align: center;
+    color : #cce6ff;
     font-family: courier;
 }
 .ans{
-     text-align: center;
+    margin-left: 15px;
     font-family: courier;
 }
 .table1{
@@ -109,6 +105,22 @@ h3 {
   margin: 5rem auto;
   line-height: 3rem;
   letter-spacing: 5px;
+}
+h2{
+  color : #cce6ff;
+}
+.qinput{
+  padding: 50px;
+  border: 3px solid white;
+  border-radius: 4px; 
+  box-shadow: 2px 2px 1px #e6e6ff;
+  background-color: rgba(232,218,236,0.8);
+  width: 50%;
+  height: 40%;
+  margin: auto; 
+}
+p{
+  color : #cce6ff;
 }
 @media(max-width:600px){
     .sky {
