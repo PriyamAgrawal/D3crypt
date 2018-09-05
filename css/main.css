@@ -27,14 +27,57 @@
     background-color: #f1f1f1;
     color : #111;
 }
+.nm{
+     border-radius: 20px 20px;
+    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
+    opacity: 0.8;
+    text-align: center;
+    padding: 1% 1% 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
 .question-back{
     border-radius: 20px 20px;
-    border: solid;
-    border-color: darkslategray;
+    
     background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
     opacity: 0.6;
     
 }
+.question{
+    text-align: center;
+    font-family: courier;
+}
+.ans{
+     text-align: center;
+    font-family: courier;
+}
+.table1{
+    border-radius: 20px 20px;
+    
+    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
+    opacity: 0.8;
+    margin-bottom: 1%;
+
+}
+
+.table2{
+    border-radius: 20px 20px;
+    
+    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
+    opacity: 0.8;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
 .sky {
   position:absolute;
   width:100%;
@@ -42,7 +85,7 @@
   background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: -olinear-gradient(to top, #283E51, #0A2342); 
-  height: 100vh;
+  height: 140%;
 }
 
 .stars {
@@ -68,7 +111,17 @@ h3 {
   line-height: 3rem;
   letter-spacing: 5px;
 }
-
+@media(max-width:600px){
+    .sky {
+  position:absolute;
+  width:100%;
+  background: #4B79A1;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -olinear-gradient(to top, #283E51, #0A2342); 
+  height: 170%;
+}
+}
 /*****************************************
 Check out Nat's pen with animated SVG weather icons. 
 
