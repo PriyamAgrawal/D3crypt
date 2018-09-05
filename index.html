@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>D 3 C R Y P T</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="IEEE - SBM" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Welcome to D3CRYPT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+    $(".button1").click(function(){
+        $(".button1").fadeOut(300);
+        $("#div1").fadeIn(2000);
+        $("#login").fadeIn(2000);
+        $("#register").fadeIn(2000);
+    });
+});
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<!-- particles.js container -->
+<div style="position: relative;" id="particles-js">
+  <button class="button button1"> CLICK HERE</button>
+  
+  <div id="div1"> D 3 C R Y P T </div>
+
+  <button class="button" id="login">Log In</button>
+  
+  <button class="button"  id="register">Sign Up</button>
+
+  <div class="footer"  style="position: absolute; left: 50% ; top: 100%;transform: translate(-50%,0);   display: block; color: white; z-index: 1;">By IEEE</div>
+
+</div>
+
+
+
+<!-- scripts -->
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+<script src="stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>
