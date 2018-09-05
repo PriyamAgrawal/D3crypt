@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Made by Yudishthir Lokhande-->
+        <title>Welcome to D3CRYPT</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Front.css">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <script type="text/javascript" src="D:\Sublime Text\Webpages\Practice\particles.js"></script>
+        <script type="text/javascript" src="D:\Sublime Text\Webpages\Practice\app.js"></script>
+        <a href="#">
+            <span class="front container">Click Here</span>
+            <span class="back">To D3CRYPT</span>
+        </a>
+        <div class="col-sm-12" id="t">
+        </div>
+        <div id="foot" class="col-sm-12">By IEEE</div>
+
+        <script type="text/javascript"> //code for decryption display
+
+            var container = $('#t').get(0);
+            var textToWrite = 'D3CRYPT';
+            var i = 0;
+            var progress = 0;
+            var codingChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            function animate() 
+            {
+                setTimeout(function()
+                { 
+                    i++;
+                    var currentText = textToWrite.substr(0, i);
+                    currentText += getRandomChars(textToWrite.length - i);
+                    container.innerHTML = currentText;
+                    progress = i/textToWrite.length;
+  
+                    if(progress < 1) 
+                    {
+                        animate();
+                    }
+                }, 100);
+            }
+
+            function getRandomChars(howMany) 
+            {
+                var result = '';
+  
+                for(var i=0; i<howMany; i++) 
+                {
+                    if(i % 5 == 0) 
+                    {
+                        result += ' ';
+                    } 
+                    else 
+                    {
+                        result += codingChars.charAt(Math.floor(Math.random() * codingChars.length));
+                    }
+                }
+                return result;
+            }
+            animate();
+
+        </script>
+    </body>
+</html>
