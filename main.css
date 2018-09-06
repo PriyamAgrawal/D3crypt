@@ -36,10 +36,13 @@
 	box-sizing: border-box;
 }
 
-body, html {
+body, html{
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
+
 }
+
+
 
 /*---------------------------------------------*/
 a {
@@ -148,7 +151,6 @@ iframe {
 	border: none !important;
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
@@ -163,7 +165,7 @@ iframe {
 
 .limiter {
   width: 100%;
-  margin: 0 auto;
+  margin:  auto;
 }
 
 .container-login100 {
@@ -177,22 +179,31 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: #ebeeef;
+  background-image: url("https://78.media.tumblr.com/271be871c97938faff960cc372b8c39e/tumblr_oe8a9e88221rqkgrio1_500.gif");
+  /* Full height */
+    
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 .wrap-login100 {
+  font-weight: bold;
   width: 670px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  opacity: 0.7;
 }
 
 /*==================================================================
 [ Title form ]*/
 .login100-form-title {
+    background-color: lightblue;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -402,7 +413,8 @@ input.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 50px;
-  background-color: #57b846;
+  background-color: #000000;
+  opacity: 0.75;
   border-radius: 25px;
 
   font-family: Poppins-Regular;
