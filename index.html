@@ -18,6 +18,7 @@ $(document).ready(function(){
       $(".button1").fadeOut(100);
       $("#div1").fadeIn(100);
   	  randtext(div1,100);
+  	  setInterval(randtext,4000,div1,100);
       $("#login").fadeIn(100);
       $("#register").fadeIn(100);
     });
@@ -32,6 +33,7 @@ $(document).ready(function(){
   <button class="button button1" id="Enter"></button>
   <script type="text/javascript">
   	randtext(Enter,100);
+  	setInterval(randtext,4000,Enter,100);
   </script>
   <div id="div1"></div>
   <button class="button" id="login">Log In</button>
