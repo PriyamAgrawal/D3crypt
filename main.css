@@ -3,7 +3,14 @@
     margin-bottom: 0px;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+.tbl{
+  border-radius: 20px 20px;
+    
+    background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
+    opacity: 0.8;
+    width: 30%;
 }
 .button1
 {
@@ -53,6 +60,7 @@ body {
     background: linear-gradient(to bottom right, #dedce8, #f9f9f9,#1111);
     opacity: 0.8;
     margin-bottom: 1%;
+
 
 }
 
@@ -135,7 +143,9 @@ p{
   background: -olinear-gradient(to top, #283E51, #0A2342); 
   height: 170%;
 }
-}
+
+
+
 /*****************************************
 Check out Nat's pen with animated SVG weather icons. 
 
