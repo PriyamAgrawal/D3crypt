@@ -21,22 +21,63 @@ $(document).ready(function(){
       $("#register").fadeIn(2000);
     });
 });
-
-
 </script>
-
-
 
 </head>
 <body>
+  <script type="text/javascript"> //code for decryption display
+  		function randtext(id)
+  		{
+            var container = $(id).get(0);
+            var textToWrite = 'D3CRYPT';
+            var i = 0;
+            var progress = 0;
+            var codingChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
+            function animate() 
+            {
+                setTimeout(function()
+                { 
+                    i++;
+                    var currentText = textToWrite.substr(0, i);
+                    currentText += getRandomChars(textToWrite.length - i);
+                    container.innerHTML = currentText;
+                    progress = i/textToWrite.length;
+  
+                    if(progress < 1) 
+                    {
+                        animate();
+                    }
+                }, 100);
+            }
 
+            function getRandomChars(howMany) 
+            {
+                var result = '';
+  
+                for(var i=0; i<howMany; i++) 
+                {
+                    if(i % 5 == 0) 
+                    {
+                        result += ' ';
+                    } 
+                    else 
+                    {
+                        result += codingChars.charAt(Math.floor(Math.random() * codingChars.length));
+                    }
+                }
+                return result;
+            }
+            animate();
+        }
+        </script>
 <!-- particles.js container -->
 <div style="position: relative;" id="particles-js">
-  <button class="button button1"> CLICK HERE</button>
-  
-  <div id="div1"> D Ǝ C R Y P T </div>
-
+  <button class="button button1" id="Enter"></button>
+  <script type="text/javascript">
+  	randtext(Enter);
+  </script>
+  <div id="div1"> D 3 C R Y P T </div>
   <button class="button" id="login">Log In</button>
   
   <button class="button"  id="register">Sign Up</button>
