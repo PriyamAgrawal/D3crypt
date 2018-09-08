@@ -3,6 +3,9 @@
     <head>
         <!--Made by Yudishthir Lokhande-->
         <title>Welcome to D3CRYPT</title>
+        <meta name="description" content="particles.js">
+        <meta name="author" content="IEEE - SBM">
+        <meta keywords="IEEE ieee sbm SBM D3CRYPT decrypt DECRYPT" description="An online cryptic hunt brought to you by IEEE Student Branch Manipal" title="D3CRYPT By IEEE Student Branch Manipal">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -10,17 +13,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="Front.css">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
     </head>
     <body>
         <div id="particles-js"></div>
         <script type="text/javascript" src="particles.js"></script>
         <script type="text/javascript" src="app.js"></script>
-        <a href="#">
-            <span class="front container">Click Here</span>
+        <div class="buttonmain">
+            <a href="#">
+            <span class="front">Click Here</span>
             <span class="back">To D3CRYPT</span>
-        </a>
-        <div class="col-sm-12" id="t">
+            </a>
         </div>
+        <div class="col-sm-12" id="t"></div>
+        <div id="register" class="" style="display: none;">
+            <button id="Login" value="Login" class="btn button"><span>Login</span></button>
+            <button id="Signup" value="Signup" class="btn button"><span>Signup</span></button>
+        </div>    
         <div id="foot" class="col-sm-12">By IEEE</div>
 
         <script type="text/javascript"> //code for decryption display
@@ -66,7 +75,15 @@
                 return result;
             }
             animate();
-
+        </script>
+        <script type="text/javascript">
+            $(".buttonmain").click(function(){
+            $(".buttonmain").fadeOut("slow");
+            $("#register").fadeIn("slow");
+            });
+        </script>
+        <script type="text/javascript">
+            
         </script>
     </body>
 </html>
